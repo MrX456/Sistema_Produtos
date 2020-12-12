@@ -1,0 +1,452 @@
+Starting tests...
+
+
+Preparing next test...
+
+out 29, 2020 1:44:09 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: systemPU]
+out 29, 2020 1:44:09 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.4.11.Final}
+out 29, 2020 1:44:09 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+out 29, 2020 1:44:10 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+out 29, 2020 1:44:10 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/db_sistemaprodutos]
+out 29, 2020 1:44:10 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {user=root, password=****}
+out 29, 2020 1:44:10 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+out 29, 2020 1:44:10 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+out 29, 2020 1:44:11 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+out 29, 2020 1:44:12 PM org.hibernate.mapping.RootClass checkCompositeIdentifier
+WARN: HHH000038: Composite-id class does not override equals(): com.system.model.bean.Funcionario
+out 29, 2020 1:44:13 PM org.hibernate.mapping.RootClass checkCompositeIdentifier
+WARN: HHH000039: Composite-id class does not override hashCode(): com.system.model.bean.Funcionario
+out 29, 2020 1:44:17 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5a4c638d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Hibernate: 
+    
+    alter table Funcionario 
+       add column id integer not null
+out 29, 2020 1:44:17 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+testSave() running...
+
+Creating Usuario instances...
+
+Setting first Usuario attributes...
+
+Setting another Usuario attributes...
+
+Setting another Usuario attributes...
+
+Setting last Usuario attributes...
+
+Adding Usuario objects to list...
+
+Inserting Usuario objects data...
+
+Validating data...
+
+Hibernate: 
+    insert 
+    into
+        Usuario
+        (sexo, login, perfil, senha) 
+    values
+        (?, ?, ?, ?)
+
+Data sucessfully inserted.
+
+Validating data...
+
+Hibernate: 
+    insert 
+    into
+        Usuario
+        (sexo, login, perfil, senha) 
+    values
+        (?, ?, ?, ?)
+
+Data sucessfully inserted.
+
+Validating data...
+
+Hibernate: 
+    insert 
+    into
+        Usuario
+        (sexo, login, perfil, senha) 
+    values
+        (?, ?, ?, ?)
+
+Data sucessfully inserted.
+
+Validating data...
+
+Hibernate: 
+    insert 
+    into
+        Usuario
+        (sexo, login, perfil, senha) 
+    values
+        (?, ?, ?, ?)
+
+Data sucessfully inserted.
+
+
+PASS
+
+testSave() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testUpdate() running...
+
+Creating Usuario instance...
+
+Setting Usuario attributes...
+
+Validating and updating data...
+
+Hibernate: 
+    select
+        usuario0_.id as id1_1_0_,
+        usuario0_.sexo as sexo2_1_0_,
+        usuario0_.login as login3_1_0_,
+        usuario0_.perfil as perfil4_1_0_,
+        usuario0_.senha as senha5_1_0_ 
+    from
+        Usuario usuario0_ 
+    where
+        usuario0_.id=?
+Hibernate: 
+    update
+        Usuario 
+    set
+        sexo=?,
+        login=?,
+        perfil=?,
+        senha=? 
+    where
+        id=?
+Hibernate: 
+    select
+        usuario0_.id as id1_1_0_,
+        usuario0_.sexo as sexo2_1_0_,
+        usuario0_.login as login3_1_0_,
+        usuario0_.perfil as perfil4_1_0_,
+        usuario0_.senha as senha5_1_0_ 
+    from
+        Usuario usuario0_ 
+    where
+        usuario0_.id=?
+
+ID : 1
+
+Login : admin02
+
+Senha : admin
+
+Perfil : admin
+
+Sexo : fem
+
+PASS
+
+testUpdate() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testFindById() running...
+
+Generating id number...
+
+Searching...
+
+Hibernate: 
+    select
+        usuario0_.id as id1_1_0_,
+        usuario0_.sexo as sexo2_1_0_,
+        usuario0_.login as login3_1_0_,
+        usuario0_.perfil as perfil4_1_0_,
+        usuario0_.senha as senha5_1_0_ 
+    from
+        Usuario usuario0_ 
+    where
+        usuario0_.id=?
+
+ID : 1
+
+Login : admin02
+
+Senha : admin
+
+Perfil : admin
+
+Sexo : fem
+
+PASS
+
+testFindById() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testFindByIdNotExists() running...
+
+Generating id number...
+
+Searching...
+
+Hibernate: 
+    select
+        usuario0_.id as id1_1_0_,
+        usuario0_.sexo as sexo2_1_0_,
+        usuario0_.login as login3_1_0_,
+        usuario0_.perfil as perfil4_1_0_,
+        usuario0_.senha as senha5_1_0_ 
+    from
+        Usuario usuario0_ 
+    where
+        usuario0_.id=?
+
+Data not found
+
+PASS
+
+testFindByIdNotExists() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testFindAll() running...
+
+Searching...
+
+Hibernate: 
+    select
+        usuario0_.id as id1_1_,
+        usuario0_.sexo as sexo2_1_,
+        usuario0_.login as login3_1_,
+        usuario0_.perfil as perfil4_1_,
+        usuario0_.senha as senha5_1_ 
+    from
+        Usuario usuario0_
+
+All data retrieved
+
+
+ID : 1
+
+Login : admin02
+
+Senha : admin
+
+Perfil : admin
+
+Sexo : fem
+--------------------------------
+
+ID : 2
+
+Login : marcio56
+
+Senha : 4567
+
+Perfil : usuario
+
+Sexo : masc
+--------------------------------
+
+ID : 3
+
+Login : paulor432
+
+Senha : 0ads
+
+Perfil : admin
+
+Sexo : masc
+--------------------------------
+
+ID : 4
+
+Login : clara4324
+
+Senha : rsdf
+
+Perfil : usuario
+
+Sexo : fem
+--------------------------------
+
+PASS
+
+testFindAll() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testFindByLoginSenha() running...
+
+Generating values...
+
+Searching...
+
+Hibernate: 
+    select
+        usuario0_.id as id1_1_,
+        usuario0_.sexo as sexo2_1_,
+        usuario0_.login as login3_1_,
+        usuario0_.perfil as perfil4_1_,
+        usuario0_.senha as senha5_1_ 
+    from
+        Usuario usuario0_ 
+    where
+        (
+            usuario0_.login in (
+                ?
+            )
+        ) 
+        and (
+            usuario0_.senha in (
+                ?
+            )
+        )
+
+ID : 1
+
+Login : admin02
+
+Senha : admin
+
+Perfil : admin
+
+Sexo : fem
+
+PASS
+
+testFindByLoginSenha() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testFindByLoginSenhaNotExists() running...
+
+Generating values...
+
+Searching...
+
+Hibernate: 
+    select
+        usuario0_.id as id1_1_,
+        usuario0_.sexo as sexo2_1_,
+        usuario0_.login as login3_1_,
+        usuario0_.perfil as perfil4_1_,
+        usuario0_.senha as senha5_1_ 
+    from
+        Usuario usuario0_ 
+    where
+        (
+            usuario0_.login in (
+                ?
+            )
+        ) 
+        and (
+            usuario0_.senha in (
+                ?
+            )
+        )
+
+Data not found
+
+PASS
+
+testFindByLoginSenhaNotExists() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testRemove() running...
+
+Generating id number...
+
+Removing Usuario...
+
+Hibernate: 
+    select
+        usuario0_.id as id1_1_0_,
+        usuario0_.sexo as sexo2_1_0_,
+        usuario0_.login as login3_1_0_,
+        usuario0_.perfil as perfil4_1_0_,
+        usuario0_.senha as senha5_1_0_ 
+    from
+        Usuario usuario0_ 
+    where
+        usuario0_.id=?
+Hibernate: 
+    delete 
+    from
+        Usuario 
+    where
+        id=?
+Searching...
+
+Hibernate: 
+    select
+        usuario0_.id as id1_1_0_,
+        usuario0_.sexo as sexo2_1_0_,
+        usuario0_.login as login3_1_0_,
+        usuario0_.perfil as perfil4_1_0_,
+        usuario0_.senha as senha5_1_0_ 
+    from
+        Usuario usuario0_ 
+    where
+        usuario0_.id=?
+Nothing found
+
+PASS
+
+testRemove() finalized.
+
+
+
+
+
+Finishing tests...
+
+Tests finished

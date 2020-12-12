@@ -1,0 +1,67 @@
+Starting tests...
+
+
+Preparing next test...
+
+testValidate() running...
+
+Descricao must be validate
+
+Creating Categoria instance...
+
+Setting Categoria attributes...
+
+Descrição : Games
+
+PASS
+
+testValidate() finalized.
+
+
+
+
+
+Preparing next test...
+
+testOverflowFieldMaxChar() running...
+
+Descricao must be validate[max 80 chars]
+
+Creating Categoria instance...
+
+Generating String...
+
+Setting Categoria attributes...
+
+descricao length = 81
+
+PASS
+
+testOverflowFieldMaxChar() finalized.
+
+
+
+
+
+Preparing next test...
+
+validateNullField() running...
+
+Descricao must be validate
+
+Creating Categoria instance...
+
+Setting Categoria attributes...
+
+
+PASS
+
+validateNullField() finalized.
+
+
+
+
+
+Finishing tests...
+
+Tests finished

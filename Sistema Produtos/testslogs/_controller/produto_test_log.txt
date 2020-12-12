@@ -1,0 +1,70 @@
+Starting tests...
+
+
+Preparing next test...
+
+testValidate() running...
+
+All fields must be validate
+
+Creating Produto instance...
+
+Setting Produto attributes...
+
+Descrição : Playstation 5 All Digital
+QTDE : 5
+Valor : 4200.94
+Categoria ID : 1
+
+PASS
+
+testValidate() finalized.
+
+
+
+
+
+Preparing next test...
+
+testOverflowFieldMaxChar() running...
+
+Descricao must be validate[max 80 chars]
+
+Creating Produto instance...
+
+Generating String...
+
+Setting Categoria attributes...
+
+descricao length = 81
+
+PASS
+
+testOverflowFieldMaxChar() finalized.
+
+
+
+
+
+Preparing next test...
+
+validateNullField() running...
+
+Descricao must be validate
+
+Creating Produto instance...
+
+Setting Produto attributes...
+
+
+PASS
+
+validateNullField() finalized.
+
+
+
+
+
+Finishing tests...
+
+Tests finished

@@ -1,0 +1,86 @@
+Starting tests...
+
+
+Preparing next test...
+
+validateNullField() running...
+
+All atributes must be validate
+
+Creating Funcionario instance...
+
+Setting Funcionario attributes...
+
+matricula = 1048
+nome empty = 0
+dt nasc = 12/06/1974
+sexo length = 3
+endereco empty = 0
+data contratacao = 11/04/2016
+salario = 1745.90
+
+PASS
+
+validateNullField() finalized.
+
+
+
+
+
+Preparing next test...
+
+testValidate() running...
+
+All atributes must be validate
+
+Creating Funcionario instance...
+
+Setting Funcionario attributes...
+
+matricula = 1048
+nome length = 20
+dt nasc = 12/06/1974
+sexo length = 3
+endereco length = 9
+data contratacao = 11/04/2016
+salario = 1745.90
+
+PASS
+
+testValidate() finalized.
+
+
+
+
+
+Preparing next test...
+
+testOverflowFieldMaxChar() running...
+
+All atributes must be validate[max 80 chars]
+
+Creating Funcionario instance...
+
+Setting Funcionario attributes...
+
+Generating String...
+
+matricula = 1048
+nome length = 81
+dt nasc = 12/06/1974
+sexo length = 3
+endereco length = 81
+data contratacao = 11/04/2016
+salario = 1745.90
+
+PASS
+
+testOverflowFieldMaxChar() finalized.
+
+
+
+
+
+Finishing tests...
+
+Tests finished

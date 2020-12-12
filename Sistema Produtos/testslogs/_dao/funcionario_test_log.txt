@@ -1,0 +1,564 @@
+Starting tests...
+
+
+Preparing next test...
+
+nov 09, 2020 1:50:38 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: systemPU]
+nov 09, 2020 1:50:39 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.4.11.Final}
+nov 09, 2020 1:50:39 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+nov 09, 2020 1:50:40 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+nov 09, 2020 1:50:40 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/db_sistemaprodutos]
+nov 09, 2020 1:50:40 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {user=root, password=****}
+nov 09, 2020 1:50:40 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+nov 09, 2020 1:50:40 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+nov 09, 2020 1:50:40 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+nov 09, 2020 1:50:43 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1a1ed4e5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+nov 09, 2020 1:50:43 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+testSave() running...
+
+Creating Funcionario instances...
+
+Setting first Funcionario attributes...
+
+Setting second Funcionario attributes...
+
+Setting third Funcionario attributes...
+
+Setting fourth Funcionario attributes...
+
+Adding Funcionario objects to list...
+
+Inserting Funcionario objects data...
+
+Hibernate: 
+    select
+        funcionari0_.matricula as matricul1_0_0_,
+        funcionari0_.dt_contratacao as dt_contr2_0_0_,
+        funcionari0_.dt_nasc as dt_nasc3_0_0_,
+        funcionari0_.endereco as endereco4_0_0_,
+        funcionari0_.nome as nome5_0_0_,
+        funcionari0_.salario as salario6_0_0_,
+        funcionari0_.sexo as sexo7_0_0_,
+        funcionari0_.telefone as telefone8_0_0_ 
+    from
+        Funcionario funcionari0_ 
+    where
+        funcionari0_.matricula=?
+Hibernate: 
+    insert 
+    into
+        Funcionario
+        (dt_contratacao, dt_nasc, endereco, nome, salario, sexo, telefone, matricula) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+
+Data sucessfully inserted.
+
+Hibernate: 
+    select
+        funcionari0_.matricula as matricul1_0_0_,
+        funcionari0_.dt_contratacao as dt_contr2_0_0_,
+        funcionari0_.dt_nasc as dt_nasc3_0_0_,
+        funcionari0_.endereco as endereco4_0_0_,
+        funcionari0_.nome as nome5_0_0_,
+        funcionari0_.salario as salario6_0_0_,
+        funcionari0_.sexo as sexo7_0_0_,
+        funcionari0_.telefone as telefone8_0_0_ 
+    from
+        Funcionario funcionari0_ 
+    where
+        funcionari0_.matricula=?
+Hibernate: 
+    insert 
+    into
+        Funcionario
+        (dt_contratacao, dt_nasc, endereco, nome, salario, sexo, telefone, matricula) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+
+Data sucessfully inserted.
+
+Hibernate: 
+    select
+        funcionari0_.matricula as matricul1_0_0_,
+        funcionari0_.dt_contratacao as dt_contr2_0_0_,
+        funcionari0_.dt_nasc as dt_nasc3_0_0_,
+        funcionari0_.endereco as endereco4_0_0_,
+        funcionari0_.nome as nome5_0_0_,
+        funcionari0_.salario as salario6_0_0_,
+        funcionari0_.sexo as sexo7_0_0_,
+        funcionari0_.telefone as telefone8_0_0_ 
+    from
+        Funcionario funcionari0_ 
+    where
+        funcionari0_.matricula=?
+Hibernate: 
+    insert 
+    into
+        Funcionario
+        (dt_contratacao, dt_nasc, endereco, nome, salario, sexo, telefone, matricula) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+
+Data sucessfully inserted.
+
+Hibernate: 
+    select
+        funcionari0_.matricula as matricul1_0_0_,
+        funcionari0_.dt_contratacao as dt_contr2_0_0_,
+        funcionari0_.dt_nasc as dt_nasc3_0_0_,
+        funcionari0_.endereco as endereco4_0_0_,
+        funcionari0_.nome as nome5_0_0_,
+        funcionari0_.salario as salario6_0_0_,
+        funcionari0_.sexo as sexo7_0_0_,
+        funcionari0_.telefone as telefone8_0_0_ 
+    from
+        Funcionario funcionari0_ 
+    where
+        funcionari0_.matricula=?
+Hibernate: 
+    insert 
+    into
+        Funcionario
+        (dt_contratacao, dt_nasc, endereco, nome, salario, sexo, telefone, matricula) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+
+Data sucessfully inserted.
+
+
+PASS
+
+testSave() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testFindAll() running...
+
+Searching...
+
+Hibernate: 
+    select
+        funcionari0_.matricula as matricul1_0_,
+        funcionari0_.dt_contratacao as dt_contr2_0_,
+        funcionari0_.dt_nasc as dt_nasc3_0_,
+        funcionari0_.endereco as endereco4_0_,
+        funcionari0_.nome as nome5_0_,
+        funcionari0_.salario as salario6_0_,
+        funcionari0_.sexo as sexo7_0_,
+        funcionari0_.telefone as telefone8_0_ 
+    from
+        Funcionario funcionari0_
+
+All data retrieved
+
+
+Matricula : 1048
+
+Nome : Maria da Silva
+
+Nascimento : 1986-01-06
+
+Sexo : fem
+
+Telefone : 3385-2150
+
+Endereço : Rua Spark 186
+
+Contratação : 1986-01-06
+
+Salario : 1645.90
+--------------------------------
+
+Matricula : 1072
+
+Nome : Carlos Delfino de Souza
+
+Nascimento : 1974-10-03
+
+Sexo : masc
+
+Telefone : 3440-2750
+
+Endereço : Rua Levin 450
+
+Contratação : 1974-10-03
+
+Salario : 2750.00
+--------------------------------
+
+Matricula : 1108
+
+Nome : Natalia de Oliveira
+
+Nascimento : 1991-02-09
+
+Sexo : fem
+
+Telefone : 3250-2599
+
+Endereço : Rua Saul 210
+
+Contratação : 1991-02-09
+
+Salario : 1690.00
+--------------------------------
+
+Matricula : 1206
+
+Nome : Paulo Diniz
+
+Nascimento : 1989-04-06
+
+Sexo : masc
+
+Telefone : 3150-6542
+
+Endereço : Rua Carol 604
+
+Contratação : 1989-04-06
+
+Salario : 1925.00
+--------------------------------
+
+PASS
+
+testFindAll() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testUpdate() running...
+
+Creating Funcionario instance...
+
+Setting first Funcionario attributes...
+
+Validating and updating data...
+
+Hibernate: 
+    select
+        funcionari0_.matricula as matricul1_0_0_,
+        funcionari0_.dt_contratacao as dt_contr2_0_0_,
+        funcionari0_.dt_nasc as dt_nasc3_0_0_,
+        funcionari0_.endereco as endereco4_0_0_,
+        funcionari0_.nome as nome5_0_0_,
+        funcionari0_.salario as salario6_0_0_,
+        funcionari0_.sexo as sexo7_0_0_,
+        funcionari0_.telefone as telefone8_0_0_ 
+    from
+        Funcionario funcionari0_ 
+    where
+        funcionari0_.matricula=?
+Hibernate: 
+    select
+        funcionari0_.matricula as matricul1_0_0_,
+        funcionari0_.dt_contratacao as dt_contr2_0_0_,
+        funcionari0_.dt_nasc as dt_nasc3_0_0_,
+        funcionari0_.endereco as endereco4_0_0_,
+        funcionari0_.nome as nome5_0_0_,
+        funcionari0_.salario as salario6_0_0_,
+        funcionari0_.sexo as sexo7_0_0_,
+        funcionari0_.telefone as telefone8_0_0_ 
+    from
+        Funcionario funcionari0_ 
+    where
+        funcionari0_.matricula=?
+Hibernate: 
+    update
+        Funcionario 
+    set
+        dt_contratacao=?,
+        dt_nasc=?,
+        endereco=?,
+        nome=?,
+        salario=?,
+        sexo=?,
+        telefone=? 
+    where
+        matricula=?
+Hibernate: 
+    select
+        funcionari0_.matricula as matricul1_0_0_,
+        funcionari0_.dt_contratacao as dt_contr2_0_0_,
+        funcionari0_.dt_nasc as dt_nasc3_0_0_,
+        funcionari0_.endereco as endereco4_0_0_,
+        funcionari0_.nome as nome5_0_0_,
+        funcionari0_.salario as salario6_0_0_,
+        funcionari0_.sexo as sexo7_0_0_,
+        funcionari0_.telefone as telefone8_0_0_ 
+    from
+        Funcionario funcionari0_ 
+    where
+        funcionari0_.matricula=?
+
+Matricula : 1048
+
+Nome : Maria da Silva
+
+Nascimento : 1986-01-06
+
+Sexo : fem
+
+Telefone : 4004-2150
+
+Endereço : Rua Levin 164
+
+Contratação : 1986-01-06
+
+Salario : 1985.95
+
+PASS
+
+testUpdate() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testFindByMatricula() running...
+
+Setting matricula number...
+
+Searching...
+
+Hibernate: 
+    select
+        funcionari0_.matricula as matricul1_0_0_,
+        funcionari0_.dt_contratacao as dt_contr2_0_0_,
+        funcionari0_.dt_nasc as dt_nasc3_0_0_,
+        funcionari0_.endereco as endereco4_0_0_,
+        funcionari0_.nome as nome5_0_0_,
+        funcionari0_.salario as salario6_0_0_,
+        funcionari0_.sexo as sexo7_0_0_,
+        funcionari0_.telefone as telefone8_0_0_ 
+    from
+        Funcionario funcionari0_ 
+    where
+        funcionari0_.matricula=?
+
+Matricula : 1206
+
+Nome : Paulo Diniz
+
+Nascimento : 1989-04-06
+
+Sexo : masc
+
+Telefone : 3150-6542
+
+Endereço : Rua Carol 604
+
+Contratação : 1989-04-06
+
+Salario : 1925.00
+
+PASS
+
+testFindById() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testFindByMatriculaNotExists() running...
+
+Setting matricula number...
+
+Searching...
+
+Hibernate: 
+    select
+        funcionari0_.matricula as matricul1_0_0_,
+        funcionari0_.dt_contratacao as dt_contr2_0_0_,
+        funcionari0_.dt_nasc as dt_nasc3_0_0_,
+        funcionari0_.endereco as endereco4_0_0_,
+        funcionari0_.nome as nome5_0_0_,
+        funcionari0_.salario as salario6_0_0_,
+        funcionari0_.sexo as sexo7_0_0_,
+        funcionari0_.telefone as telefone8_0_0_ 
+    from
+        Funcionario funcionari0_ 
+    where
+        funcionari0_.matricula=?
+
+Data not found
+
+PASS
+
+testFindByIdNotExists() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testfindByNomeLike() running...
+
+Setting letter ...
+
+Searching 'm'...
+
+Hibernate: 
+    select
+        funcionari0_.matricula as matricul1_0_,
+        funcionari0_.dt_contratacao as dt_contr2_0_,
+        funcionari0_.dt_nasc as dt_nasc3_0_,
+        funcionari0_.endereco as endereco4_0_,
+        funcionari0_.nome as nome5_0_,
+        funcionari0_.salario as salario6_0_,
+        funcionari0_.sexo as sexo7_0_,
+        funcionari0_.telefone as telefone8_0_ 
+    from
+        Funcionario funcionari0_ 
+    where
+        funcionari0_.nome like ?
+
+All data retrieved
+
+
+Matricula : 1048
+
+Nome : Maria da Silva
+
+Nascimento : 1986-01-06
+
+Sexo : fem
+
+Telefone : 4004-2150
+
+Endereço : Rua Levin 164
+
+Contratação : 1986-01-06
+
+Salario : 1985.95
+--------------------------------
+
+PASS
+
+testfindByNomeLike() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testfindByNomeLikeNotExists() running...
+
+Setting letter ...
+
+Searching 'z'...
+
+Hibernate: 
+    select
+        funcionari0_.matricula as matricul1_0_,
+        funcionari0_.dt_contratacao as dt_contr2_0_,
+        funcionari0_.dt_nasc as dt_nasc3_0_,
+        funcionari0_.endereco as endereco4_0_,
+        funcionari0_.nome as nome5_0_,
+        funcionari0_.salario as salario6_0_,
+        funcionari0_.sexo as sexo7_0_,
+        funcionari0_.telefone as telefone8_0_ 
+    from
+        Funcionario funcionari0_ 
+    where
+        funcionari0_.nome like ?
+
+Data not found
+
+PASS
+
+testfindByNomeLikeNotExists() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testRemove() running...
+
+Setting matricula number...
+
+Removing Funcionario...
+
+Hibernate: 
+    select
+        funcionari0_.matricula as matricul1_0_0_,
+        funcionari0_.dt_contratacao as dt_contr2_0_0_,
+        funcionari0_.dt_nasc as dt_nasc3_0_0_,
+        funcionari0_.endereco as endereco4_0_0_,
+        funcionari0_.nome as nome5_0_0_,
+        funcionari0_.salario as salario6_0_0_,
+        funcionari0_.sexo as sexo7_0_0_,
+        funcionari0_.telefone as telefone8_0_0_ 
+    from
+        Funcionario funcionari0_ 
+    where
+        funcionari0_.matricula=?
+Hibernate: 
+    delete 
+    from
+        Funcionario 
+    where
+        matricula=?
+Searching...
+
+Hibernate: 
+    select
+        funcionari0_.matricula as matricul1_0_0_,
+        funcionari0_.dt_contratacao as dt_contr2_0_0_,
+        funcionari0_.dt_nasc as dt_nasc3_0_0_,
+        funcionari0_.endereco as endereco4_0_0_,
+        funcionari0_.nome as nome5_0_0_,
+        funcionari0_.salario as salario6_0_0_,
+        funcionari0_.sexo as sexo7_0_0_,
+        funcionari0_.telefone as telefone8_0_0_ 
+    from
+        Funcionario funcionari0_ 
+    where
+        funcionari0_.matricula=?
+Nothing found
+
+PASS
+
+testRemove() finalized.
+
+
+
+
+
+Finishing tests...
+
+Tests finished

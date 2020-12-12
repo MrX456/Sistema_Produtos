@@ -1,0 +1,391 @@
+Starting tests...
+
+
+Preparing next test...
+
+nov 18, 2020 1:17:37 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: systemPU]
+nov 18, 2020 1:17:38 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.4.11.Final}
+nov 18, 2020 1:17:38 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+nov 18, 2020 1:17:39 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+nov 18, 2020 1:17:39 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/db_sistemaprodutos]
+nov 18, 2020 1:17:39 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {user=root, password=****}
+nov 18, 2020 1:17:39 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+nov 18, 2020 1:17:39 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+nov 18, 2020 1:17:39 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+nov 18, 2020 1:17:43 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@13e698c7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+nov 18, 2020 1:17:43 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+testSave() running...
+
+Creating Categoria instances...
+
+Setting first Categoria attributes...
+
+Setting second Categoria attributes...
+
+Setting third Categoria attributes...
+
+Setting fourth Categoria attributes...
+
+Adding Categoria objects to list...
+
+Inserting Categoria objects data...
+
+Validating data...
+
+Hibernate: 
+    insert 
+    into
+        Categoria
+        (descricao, icone) 
+    values
+        (?, ?)
+
+Data sucessfully inserted.
+
+Validating data...
+
+Hibernate: 
+    insert 
+    into
+        Categoria
+        (descricao, icone) 
+    values
+        (?, ?)
+
+Data sucessfully inserted.
+
+Validating data...
+
+Hibernate: 
+    insert 
+    into
+        Categoria
+        (descricao, icone) 
+    values
+        (?, ?)
+
+Data sucessfully inserted.
+
+Validating data...
+
+Hibernate: 
+    insert 
+    into
+        Categoria
+        (descricao, icone) 
+    values
+        (?, ?)
+
+Data sucessfully inserted.
+
+
+PASS
+
+testSave() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testUpdate() running...
+
+Creating Categoria instance...
+
+Setting Categoria attributes...
+
+Validating and updating data...
+
+Hibernate: 
+    select
+        categoria0_.id as id1_0_0_,
+        categoria0_.descricao as descrica2_0_0_,
+        categoria0_.dt_registro as dt_regis3_0_0_,
+        categoria0_.icone as icone4_0_0_ 
+    from
+        Categoria categoria0_ 
+    where
+        categoria0_.id=?
+Hibernate: 
+    update
+        Categoria 
+    set
+        descricao=?,
+        icone=? 
+    where
+        id=?
+Hibernate: 
+    select
+        categoria0_.id as id1_0_0_,
+        categoria0_.descricao as descrica2_0_0_,
+        categoria0_.dt_registro as dt_regis3_0_0_,
+        categoria0_.icone as icone4_0_0_ 
+    from
+        Categoria categoria0_ 
+    where
+        categoria0_.id=?
+
+ID : 4
+
+Descrição : Escritório
+
+Data Registro : 2020-11-18 13:17:43.0
+
+PASS
+
+testUpdate() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testFindById() running...
+
+Generating id number...
+
+Searching...
+
+Hibernate: 
+    select
+        categoria0_.id as id1_0_0_,
+        categoria0_.descricao as descrica2_0_0_,
+        categoria0_.dt_registro as dt_regis3_0_0_,
+        categoria0_.icone as icone4_0_0_ 
+    from
+        Categoria categoria0_ 
+    where
+        categoria0_.id=?
+
+ID : 4
+
+Descrição : Escritório
+
+Data Registro : 2020-11-18 13:17:43.0
+
+PASS
+
+testFindById() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testFindByIdNotExists() running...
+
+Generating id number...
+
+Searching...
+
+Hibernate: 
+    select
+        categoria0_.id as id1_0_0_,
+        categoria0_.descricao as descrica2_0_0_,
+        categoria0_.dt_registro as dt_regis3_0_0_,
+        categoria0_.icone as icone4_0_0_ 
+    from
+        Categoria categoria0_ 
+    where
+        categoria0_.id=?
+
+Data not found
+
+PASS
+
+testFindByIdNotExists() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testFindAll() running...
+
+Searching...
+
+Hibernate: 
+    select
+        categoria0_.id as id1_0_,
+        categoria0_.descricao as descrica2_0_,
+        categoria0_.dt_registro as dt_regis3_0_,
+        categoria0_.icone as icone4_0_ 
+    from
+        Categoria categoria0_
+
+All data retrieved
+
+
+ID : 1
+
+Descrição : Games
+
+Data Registro : 2020-11-18 13:17:43.0
+--------------------------------
+
+ID : 2
+
+Descrição : Informatica
+
+Data Registro : 2020-11-18 13:17:43.0
+--------------------------------
+
+ID : 3
+
+Descrição : Automotivo
+
+Data Registro : 2020-11-18 13:17:43.0
+--------------------------------
+
+ID : 4
+
+Descrição : Escritório
+
+Data Registro : 2020-11-18 13:17:43.0
+--------------------------------
+
+PASS
+
+testFindAll() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testfindByDescricaoLike() running...
+
+Setting letter ...
+
+Searching 'g'...
+
+Hibernate: 
+    select
+        categoria0_.id as id1_0_,
+        categoria0_.descricao as descrica2_0_,
+        categoria0_.dt_registro as dt_regis3_0_,
+        categoria0_.icone as icone4_0_ 
+    from
+        Categoria categoria0_ 
+    where
+        categoria0_.descricao like ?
+
+All data retrieved
+
+
+ID : 1
+
+Descrição : Games
+
+Data Registro : 2020-11-18 13:17:43.0
+--------------------------------
+
+PASS
+
+testfindByDescricaoLike() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testfindByDescricaoLikeNotExists() running...
+
+Setting letter ...
+
+Searching 'z'...
+
+Hibernate: 
+    select
+        categoria0_.id as id1_0_,
+        categoria0_.descricao as descrica2_0_,
+        categoria0_.dt_registro as dt_regis3_0_,
+        categoria0_.icone as icone4_0_ 
+    from
+        Categoria categoria0_ 
+    where
+        categoria0_.descricao like ?
+
+Data not found
+
+PASS
+
+testfindByDescricaoLikeNotExists() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testRemove() running...
+
+Generating id number...
+
+Removing Categoria...
+
+Hibernate: 
+    select
+        categoria0_.id as id1_0_0_,
+        categoria0_.descricao as descrica2_0_0_,
+        categoria0_.dt_registro as dt_regis3_0_0_,
+        categoria0_.icone as icone4_0_0_ 
+    from
+        Categoria categoria0_ 
+    where
+        categoria0_.id=?
+Hibernate: 
+    delete 
+    from
+        Categoria 
+    where
+        id=?
+Searching...
+
+Hibernate: 
+    select
+        categoria0_.id as id1_0_0_,
+        categoria0_.descricao as descrica2_0_0_,
+        categoria0_.dt_registro as dt_regis3_0_0_,
+        categoria0_.icone as icone4_0_0_ 
+    from
+        Categoria categoria0_ 
+    where
+        categoria0_.id=?
+Nothing found
+
+PASS
+
+testRemove() finalized.
+
+
+
+
+
+Finishing tests...
+
+Tests finished

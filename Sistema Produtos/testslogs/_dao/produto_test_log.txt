@@ -1,0 +1,534 @@
+nov 23, 2020 3:24:07 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: systemPU]
+nov 23, 2020 3:24:07 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.4.11.Final}
+nov 23, 2020 3:24:07 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+nov 23, 2020 3:24:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+nov 23, 2020 3:24:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/db_sistemaprodutos]
+nov 23, 2020 3:24:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {user=root, password=****}
+nov 23, 2020 3:24:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+nov 23, 2020 3:24:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+nov 23, 2020 3:24:09 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+nov 23, 2020 3:24:12 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5cbb84b1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+nov 23, 2020 3:24:12 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Starting tests...
+
+
+Preparing next test...
+
+Creating Produto instances...
+
+Setting first Produto attributes...
+
+Setting second Produto attributes...
+
+Setting third Produto attributes...
+
+Setting fourth Produto attributes...
+
+Adding Produto objects to list...
+
+Inserting Produto objects data...
+
+Validating data...
+
+Hibernate: 
+    insert 
+    into
+        Produto
+        (descricao, categoria_id, qtde, valor) 
+    values
+        (?, ?, ?, ?)
+
+Data sucessfully inserted.
+
+Validating data...
+
+Hibernate: 
+    insert 
+    into
+        Produto
+        (descricao, categoria_id, qtde, valor) 
+    values
+        (?, ?, ?, ?)
+
+Data sucessfully inserted.
+
+Validating data...
+
+Hibernate: 
+    insert 
+    into
+        Produto
+        (descricao, categoria_id, qtde, valor) 
+    values
+        (?, ?, ?, ?)
+
+Data sucessfully inserted.
+
+Validating data...
+
+Hibernate: 
+    insert 
+    into
+        Produto
+        (descricao, categoria_id, qtde, valor) 
+    values
+        (?, ?, ?, ?)
+
+Data sucessfully inserted.
+
+
+PASS
+
+testSave() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testUpdate() running...
+
+Creating Produto instance...
+
+Setting Produto attributes...
+
+Validating and updating data...
+
+Hibernate: 
+    select
+        produto0_.id as id1_2_0_,
+        produto0_.descricao as descrica2_2_0_,
+        produto0_.categoria_id as categori5_2_0_,
+        produto0_.qtde as qtde3_2_0_,
+        produto0_.valor as valor4_2_0_ 
+    from
+        Produto produto0_ 
+    where
+        produto0_.id=?
+Hibernate: 
+    select
+        categoria0_.id as id1_0_0_,
+        categoria0_.descricao as descrica2_0_0_,
+        categoria0_.dt_registro as dt_regis3_0_0_,
+        categoria0_.icone as icone4_0_0_ 
+    from
+        Categoria categoria0_ 
+    where
+        categoria0_.id=?
+Hibernate: 
+    update
+        Produto 
+    set
+        descricao=?,
+        categoria_id=?,
+        qtde=?,
+        valor=? 
+    where
+        id=?
+Hibernate: 
+    select
+        produto0_.id as id1_2_0_,
+        produto0_.descricao as descrica2_2_0_,
+        produto0_.categoria_id as categori5_2_0_,
+        produto0_.qtde as qtde3_2_0_,
+        produto0_.valor as valor4_2_0_,
+        categoria1_.id as id1_0_1_,
+        categoria1_.descricao as descrica2_0_1_,
+        categoria1_.dt_registro as dt_regis3_0_1_,
+        categoria1_.icone as icone4_0_1_ 
+    from
+        Produto produto0_ 
+    left outer join
+        Categoria categoria1_ 
+            on produto0_.categoria_id=categoria1_.id 
+    where
+        produto0_.id=?
+
+ID : 3
+
+Descrição : Pacote Sulfite Chamex 500fls
+
+QTDE : 40
+
+Valor : 21.8999
+
+Categoria ID : 4
+
+PASS
+
+testUpdate() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testFindById() running...
+
+Generating id number...
+
+Searching...
+
+Hibernate: 
+    select
+        produto0_.id as id1_2_0_,
+        produto0_.descricao as descrica2_2_0_,
+        produto0_.categoria_id as categori5_2_0_,
+        produto0_.qtde as qtde3_2_0_,
+        produto0_.valor as valor4_2_0_,
+        categoria1_.id as id1_0_1_,
+        categoria1_.descricao as descrica2_0_1_,
+        categoria1_.dt_registro as dt_regis3_0_1_,
+        categoria1_.icone as icone4_0_1_ 
+    from
+        Produto produto0_ 
+    left outer join
+        Categoria categoria1_ 
+            on produto0_.categoria_id=categoria1_.id 
+    where
+        produto0_.id=?
+
+ID : 1
+
+Descrição : Playstation 5 All Digital
+
+QTDE : 5
+
+Valor : 4200.95
+
+Categoria : Games
+
+PASS
+
+testFindById() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testFindByIdNotExists() running...
+
+Generating id number...
+
+Searching...
+
+Hibernate: 
+    select
+        produto0_.id as id1_2_0_,
+        produto0_.descricao as descrica2_2_0_,
+        produto0_.categoria_id as categori5_2_0_,
+        produto0_.qtde as qtde3_2_0_,
+        produto0_.valor as valor4_2_0_,
+        categoria1_.id as id1_0_1_,
+        categoria1_.descricao as descrica2_0_1_,
+        categoria1_.dt_registro as dt_regis3_0_1_,
+        categoria1_.icone as icone4_0_1_ 
+    from
+        Produto produto0_ 
+    left outer join
+        Categoria categoria1_ 
+            on produto0_.categoria_id=categoria1_.id 
+    where
+        produto0_.id=?
+
+Data not found
+
+PASS
+
+testFindByIdNotExists() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testFindAll() running...
+
+Searching...
+
+Hibernate: 
+    select
+        produto0_.id as id1_2_,
+        produto0_.descricao as descrica2_2_,
+        produto0_.categoria_id as categori5_2_,
+        produto0_.qtde as qtde3_2_,
+        produto0_.valor as valor4_2_ 
+    from
+        Produto produto0_
+Hibernate: 
+    select
+        categoria0_.id as id1_0_0_,
+        categoria0_.descricao as descrica2_0_0_,
+        categoria0_.dt_registro as dt_regis3_0_0_,
+        categoria0_.icone as icone4_0_0_ 
+    from
+        Categoria categoria0_ 
+    where
+        categoria0_.id=?
+Hibernate: 
+    select
+        categoria0_.id as id1_0_0_,
+        categoria0_.descricao as descrica2_0_0_,
+        categoria0_.dt_registro as dt_regis3_0_0_,
+        categoria0_.icone as icone4_0_0_ 
+    from
+        Categoria categoria0_ 
+    where
+        categoria0_.id=?
+Hibernate: 
+    select
+        categoria0_.id as id1_0_0_,
+        categoria0_.descricao as descrica2_0_0_,
+        categoria0_.dt_registro as dt_regis3_0_0_,
+        categoria0_.icone as icone4_0_0_ 
+    from
+        Categoria categoria0_ 
+    where
+        categoria0_.id=?
+
+All data retrieved
+
+
+ID : 1
+
+Descrição : Playstation 5 All Digital
+
+QTDE : 5
+
+Valor : 4200.95
+
+Categoria : Games
+--------------------------------
+
+ID : 2
+
+Descrição : Xbox Series X
+
+QTDE : 5
+
+Valor : 4600.95
+
+Categoria : Games
+--------------------------------
+
+ID : 3
+
+Descrição : Pacote Sulfite Chamex 500fls
+
+QTDE : 40
+
+Valor : 21.90
+
+Categoria : Escritório
+--------------------------------
+
+ID : 4
+
+Descrição : Teclado USB Microsoft
+
+QTDE : 30
+
+Valor : 59.90
+
+Categoria : Informatica
+--------------------------------
+
+PASS
+
+testFindAll() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testfindByDescricaoLike() running...
+
+Setting letter ...
+
+Searching 'p'...
+
+Hibernate: 
+    select
+        produto0_.id as id1_2_,
+        produto0_.descricao as descrica2_2_,
+        produto0_.categoria_id as categori5_2_,
+        produto0_.qtde as qtde3_2_,
+        produto0_.valor as valor4_2_ 
+    from
+        Produto produto0_ 
+    where
+        produto0_.descricao like ?
+Hibernate: 
+    select
+        categoria0_.id as id1_0_0_,
+        categoria0_.descricao as descrica2_0_0_,
+        categoria0_.dt_registro as dt_regis3_0_0_,
+        categoria0_.icone as icone4_0_0_ 
+    from
+        Categoria categoria0_ 
+    where
+        categoria0_.id=?
+Hibernate: 
+    select
+        categoria0_.id as id1_0_0_,
+        categoria0_.descricao as descrica2_0_0_,
+        categoria0_.dt_registro as dt_regis3_0_0_,
+        categoria0_.icone as icone4_0_0_ 
+    from
+        Categoria categoria0_ 
+    where
+        categoria0_.id=?
+
+All data retrieved
+
+
+ID : 1
+
+Descrição : Playstation 5 All Digital
+
+QTDE : 5
+
+Valor : 4200.95
+
+Categoria : Games
+--------------------------------
+
+ID : 3
+
+Descrição : Pacote Sulfite Chamex 500fls
+
+QTDE : 40
+
+Valor : 21.90
+
+Categoria : Escritório
+--------------------------------
+
+PASS
+
+testfindByDescricaoLike() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testfindByDescricaoLikeNotExists() running...
+
+Setting letter ...
+
+Searching 'z'...
+
+Hibernate: 
+    select
+        produto0_.id as id1_2_,
+        produto0_.descricao as descrica2_2_,
+        produto0_.categoria_id as categori5_2_,
+        produto0_.qtde as qtde3_2_,
+        produto0_.valor as valor4_2_ 
+    from
+        Produto produto0_ 
+    where
+        produto0_.descricao like ?
+
+Data not found
+
+PASS
+
+testfindByDescricaoLikeNotExists() finalized.
+
+
+
+
+
+Preparing next test...
+
+
+testRemove() running...
+
+Generating id number...
+
+Removing Produto...
+
+Hibernate: 
+    select
+        produto0_.id as id1_2_0_,
+        produto0_.descricao as descrica2_2_0_,
+        produto0_.categoria_id as categori5_2_0_,
+        produto0_.qtde as qtde3_2_0_,
+        produto0_.valor as valor4_2_0_,
+        categoria1_.id as id1_0_1_,
+        categoria1_.descricao as descrica2_0_1_,
+        categoria1_.dt_registro as dt_regis3_0_1_,
+        categoria1_.icone as icone4_0_1_ 
+    from
+        Produto produto0_ 
+    left outer join
+        Categoria categoria1_ 
+            on produto0_.categoria_id=categoria1_.id 
+    where
+        produto0_.id=?
+Hibernate: 
+    delete 
+    from
+        Produto 
+    where
+        id=?
+Searching...
+
+Hibernate: 
+    select
+        produto0_.id as id1_2_0_,
+        produto0_.descricao as descrica2_2_0_,
+        produto0_.categoria_id as categori5_2_0_,
+        produto0_.qtde as qtde3_2_0_,
+        produto0_.valor as valor4_2_0_,
+        categoria1_.id as id1_0_1_,
+        categoria1_.descricao as descrica2_0_1_,
+        categoria1_.dt_registro as dt_regis3_0_1_,
+        categoria1_.icone as icone4_0_1_ 
+    from
+        Produto produto0_ 
+    left outer join
+        Categoria categoria1_ 
+            on produto0_.categoria_id=categoria1_.id 
+    where
+        produto0_.id=?
+Nothing found
+
+PASS
+
+testRemove() finalized.
+
+
+
+
+
+Finishing tests...
+
+Tests finished

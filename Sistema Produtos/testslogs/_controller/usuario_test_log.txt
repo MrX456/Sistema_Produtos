@@ -1,0 +1,262 @@
+data: 08/09/2020 - Terça feira - 14:13
+
+Starting tests...
+
+
+Preparing next test...
+
+testReachMaxLength() running...
+
+Max char allowed 10
+
+Generating String...
+
+String length = 10
+0123456789
+
+PASS
+
+testReachMaxLength() finalized.
+
+
+
+
+
+Preparing next test...
+
+testReachMaxLengthOverflow() running...
+
+Max char allowed 10
+
+Generating String...
+
+String length = 11
+12345678910
+
+PASS
+
+testReachMaxLengthOverflow() finalized.
+
+
+
+
+
+Preparing next test...
+
+testValidate() running...
+
+All atributes must be validate
+
+Creating Usuario instance...
+
+Setting Usuario attributes...
+
+login length = 10
+senha length = 4
+perfil length = 5
+sexo length = 3
+
+PASS
+
+testValidate() finalized.
+
+
+
+
+
+Preparing next test...
+
+testValidateFailNullField() running...
+
+Empty field login
+
+Creating Usuario instance...
+
+Setting Usuario atributes...
+
+login length = empty 0
+senha length = 4
+perfil length = 5
+sexo length = 3
+
+PASS
+
+testValidateFailNullField() finalized.
+
+
+
+
+
+Preparing next test...
+
+testValidateFailOverflowLengthField() running...
+
+Overflow field senha[limit characters 10]
+
+Generating String...
+
+Creating Usuario instance...
+
+Setting Usuario atributes...
+
+login length 6
+senha length = 11
+perfil length = 5
+sexo length = 3
+
+PASS
+
+testValidateFailOverflowLengthField() finalized.
+
+
+
+
+
+Preparing next test...
+
+testLoginAdmin() running...
+
+Generating values...
+
+Searching...
+
+set 08, 2020 2:12:47 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: systemPU]
+set 08, 2020 2:12:47 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.4.11.Final}
+set 08, 2020 2:12:48 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+set 08, 2020 2:12:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+set 08, 2020 2:12:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/db_sistemaprodutos]
+set 08, 2020 2:12:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {user=root, password=****}
+set 08, 2020 2:12:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+set 08, 2020 2:12:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+set 08, 2020 2:12:50 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+set 08, 2020 2:12:53 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@ca66933] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+set 08, 2020 2:12:54 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: 
+    select
+        usuario0_.id as id1_0_,
+        usuario0_.sexo as sexo2_0_,
+        usuario0_.login as login3_0_,
+        usuario0_.perfil as perfil4_0_,
+        usuario0_.senha as senha5_0_ 
+    from
+        Usuario usuario0_ 
+    where
+        (
+            usuario0_.login in (
+                ?
+            )
+        ) 
+        and (
+            usuario0_.senha in (
+                ?
+            )
+        )
+
+Verifing profile...
+
+Bem vindo usuario administrador!
+
+PASS
+
+testLoginAdmin() finalized.
+
+
+
+
+
+Preparing next test...
+
+testLoginUsuario() running...
+
+Generating values...
+
+Searching...
+
+Hibernate: 
+    select
+        usuario0_.id as id1_0_,
+        usuario0_.sexo as sexo2_0_,
+        usuario0_.login as login3_0_,
+        usuario0_.perfil as perfil4_0_,
+        usuario0_.senha as senha5_0_ 
+    from
+        Usuario usuario0_ 
+    where
+        (
+            usuario0_.login in (
+                ?
+            )
+        ) 
+        and (
+            usuario0_.senha in (
+                ?
+            )
+        )
+
+Verifing profile...
+
+Bem vindo usuario comum!
+
+PASS
+
+testLoginUsuario() finalized.
+
+
+
+
+
+Preparing next test...
+
+testLoginFailed() running...
+
+Generating values...
+
+Searching...
+
+Hibernate: 
+    select
+        usuario0_.id as id1_0_,
+        usuario0_.sexo as sexo2_0_,
+        usuario0_.login as login3_0_,
+        usuario0_.perfil as perfil4_0_,
+        usuario0_.senha as senha5_0_ 
+    from
+        Usuario usuario0_ 
+    where
+        (
+            usuario0_.login in (
+                ?
+            )
+        ) 
+        and (
+            usuario0_.senha in (
+                ?
+            )
+        )
+
+User not found
+
+Acesso negado!
+
+PASS
+
+testLoginFailed() finalized.
+
+
+
+
+
+Finishing tests...
+
+Tests finished

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/apiguardian-api-1.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/byte-buddy-1.10.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/classmate-1.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/dom4j-2.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/FastInfoset-1.2.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/hibernate-commons-annotations-5.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/hibernate-core-5.4.11.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/istack-commons-runtime-3.0.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/jandex-2.1.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/javassist-3.24.0-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/javax.activation-api-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/javax.persistence-api-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/jaxb-api-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/jaxb-runtime-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/jboss-logging-3.3.2.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/jboss-transaction-api_1.2_spec-1.1.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/junit-jupiter-api-5.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/junit-jupiter-engine-5.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/junit-platform-commons-1.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/junit-platform-engine-1.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/mysql-connector-java-5.1.48.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/opentest4j-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/stax-ex-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Junior/Documents/Programação/Java/[temp]MySqlHibernate/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/txw2-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/apiguardian-api-1.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/byte-buddy-1.10.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/classmate-1.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/dom4j-2.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/FastInfoset-1.2.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/hibernate-commons-annotations-5.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/hibernate-core-5.4.11.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/istack-commons-runtime-3.0.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/jandex-2.1.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/javassist-3.24.0-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/javax.activation-api-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/javax.persistence-api-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/jaxb-api-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/jaxb-runtime-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/jboss-logging-3.3.2.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/jboss-transaction-api_1.2_spec-1.1.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/junit-jupiter-api-5.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/junit-jupiter-engine-5.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/junit-platform-commons-1.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/junit-platform-engine-1.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/mysql-connector-java-5.1.48.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/opentest4j-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/stax-ex-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Workstation/Documents/My Projects/[temp]Sistema Hibernate MySql/Repo/temp_mysqlhibernate/Sistema Produtos/dependencies/txw2-2.3.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
